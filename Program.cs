@@ -4,7 +4,7 @@ namespace VariableCS
 {
     class Program
     {
-        static void Main(string[] args)
+        static void EverybitofCode()
         {
             //Create a variable (use your best judgment for type) that stores the numberOfCupsOfCoffee that you drink every day.
             //Create a variable (use your best judgment for type) called fullName and set it equal to your full name.
@@ -50,6 +50,12 @@ namespace VariableCS
             Console.WriteLine($"The sum of these numbers is {sum}. The difference of the first number minus the second is {difference}.");
             Console.WriteLine($"The product of the two numbers multiplied is {product}. The quotient of the first number divided by the second is {quotient}");
             Console.WriteLine($"The remainder from the first number divided by the second is {remainder}.");
+        }
+
+        static void Main(string[] args)
+        {
+            //EPIC: implemented a method that runs the majority of the code
+            EverybitofCode();
         }
     }
 }
