@@ -12,14 +12,20 @@ namespace VariableCS
             //Use Console.WriteLine and your variables, numberOfCupsOfCoffee, fullName, and today, to output all three on one line.
             var numberOfCupsOfCoffee = 3;
             var fullName = "Samuel Gonzalez";
+            //ADVENTURE MODE: use Date.Time for the date and time. I already had in this case.
             var today = DateTime.Now;
-            Console.WriteLine($"The time is {today} and {fullName} has had {numberOfCupsOfCoffee} cups of coffee.");
+            Console.WriteLine($"The date is {today.Month}/{today.Day}/{today.Year} and {fullName} has had {numberOfCupsOfCoffee} cups of coffee.");
 
             //Ask the user for their name and store it in a variable named userName.
             Console.WriteLine("What is your name?");
             var userName = Console.ReadLine();
             //Print out a greeting to the user, using their name.
-            Console.WriteLine($"Greetings, {userName}!");
+            // ADVENTURE MODE: Add some logic to your program that prints a different, special, greeting to the user if their name happens to be Alice.
+            if (userName == "Alice")
+            {
+                Console.WriteLine($"We've been waiting for you specifically, {userName}. We're so happy you've arrived.");
+            }
+            else { Console.WriteLine($"Greetings, {userName}!"); }
 
             //Ask the user to input two numbers.
             Console.WriteLine("Please give me two numbers.");
